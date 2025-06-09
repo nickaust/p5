@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.main-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.green-btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 0.75rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.09);
+}
+
+.green-btn:hover {
+    background-color: #029b5e;
+}
+
+.game-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.game-info {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.cards-grid, .options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.emoji-card, .emoji-option {
+    font-size: 2rem;
+    padding: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.emoji-option:hover {
+    background: #e0e0e0;
+    transform: scale(1.1);
+}
+
+#message {
+    min-height: 2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    transition: color 0.2s;
+}
